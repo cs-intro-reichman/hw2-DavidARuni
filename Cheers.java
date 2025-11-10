@@ -13,10 +13,17 @@ public class Cheers {
                 String word = args[0].toUpperCase();
                 int times = Integer.parseInt(args[1]);
                 String chant = "";
+                String vaouls = "AEIOU";
 
                 // breakdown the word into letters
                 for (int l = 0; l < word.length(); l++){
-                        chant += "Give me a  " +(word.charAt(l)) +": " + word.charAt(l) + "!\n";
+
+                        // check if letter is a vowel
+                        if (vaouls.indexOf(word.charAt(l)) != -1){
+                                chant += "Give me an " + (word.charAt(l)) + ": " + word.charAt(l) + "!\n";
+                        } else {
+                                chant += "Give me a  " +(word.charAt(l)) +": " + word.charAt(l) + "!\n";
+                        }
                 } 
 
                 
