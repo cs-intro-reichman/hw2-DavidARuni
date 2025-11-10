@@ -13,7 +13,7 @@ public class Cheers {
                 String word = args[0].toUpperCase();
                 int times = Integer.parseInt(args[1]);
                 String chant = "";
-                String vaouls = "AEIOU";
+                String vaouls = "AEFHILMNORSX";
 
                 // breakdown the word into letters
                 for (int l = 0; l < word.length(); l++){
