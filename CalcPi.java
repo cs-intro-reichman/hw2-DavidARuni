@@ -8,6 +8,6 @@ public class CalcPi {
 			pi += 1.0/i * shifter;
 			shifter *= -1;
 		}
-		System.out.println("pi according to Java: "+ Math.PI +"\npi, approximated:	 " + pi*4);
+		System.out.println("pi according to Java: "+ Math.PI +"\npi, approximated:     " + pi*4);
 	}
 }
