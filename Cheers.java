@@ -25,8 +25,12 @@ public class Cheers {
                 for (int r = 1; r < times; r++){
                         chant += word + "!!!\n";
                 }
-                // final cheer -> edge case for "\n"
-                chant += word + "!!!\n";
+
+                // edge case for less than 1 time 
+                if (times > 0) {
+                        // final cheer -> edge case for "\n"
+                        chant += word + "!!!\n";
+                }
 
                 // Print with syntaxs
                 System.out.println(chant);
