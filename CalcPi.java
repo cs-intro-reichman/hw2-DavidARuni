@@ -3,9 +3,11 @@ public class CalcPi {
 	public static void main(String [] args) { 
 		int n = Integer.parseInt(args[0]);
 		double pi = 0.0;
-		int shifter = 1;
+		int shifter = 1; // alternates between adding and subtracting terms
 		for (int i = 1; i <= n*2-1; i+=2){
+			// add the next term in the series
 			pi += 1.0/i * shifter;
+			// flip the sign for the next term
 			shifter *= -1;
 		}
 		System.out.println("pi according to Java: "+ Math.PI +"\npi, approximated:     " + pi*4);
