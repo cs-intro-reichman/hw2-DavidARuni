@@ -32,7 +32,7 @@ public class Collatz {
 		}
 		// output results concise mode
 		if (mode == 'v'){
-			System.out.println(output);
+			System.out.print(output);
 		}
 		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1."); 
 	}
